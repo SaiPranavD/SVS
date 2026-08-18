@@ -218,9 +218,9 @@ function ProductsPage() {
               const catProducts = filtered.filter((p) => p.category === catId);
 
               return (
-                <div key={catId} id={catId} className="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-border/40 pb-12 last:border-0 last:pb-0 scroll-mt-24">
-                  {/* Category Header Card with Image */}
-                  <div className="lg:col-span-4 bg-card rounded-lg border border-border overflow-hidden flex flex-col">
+                <div key={catId} id={catId} className="flow-root border-b border-border/40 pb-12 last:border-0 last:pb-0 scroll-mt-24">
+                  {/* Category Header Card with Image - Floated Left */}
+                  <div className="float-left w-full lg:w-[23%] lg:mr-[2%] mb-6 bg-card rounded-lg border border-border overflow-hidden flex flex-col">
                     <div className="aspect-[2/1] overflow-hidden bg-bone relative">
                       <img
                         src={categoryImages[catId] || catHerbalImg}
@@ -228,7 +228,7 @@ function ProductsPage() {
                         className="h-full w-full object-cover"
                       />
                     </div>
-                    <div className="p-6 flex flex-col justify-between flex-1 min-h-[140px]">
+                    <div className="p-5 flex flex-col justify-between flex-1 min-h-[140px]">
                       <div>
                         <div className="flex items-center gap-3">
                           {catId === "natural-vitamins" || catId === "natural-minerals" || catId === "phytochemicals" ? (
@@ -236,11 +236,11 @@ function ProductsPage() {
                           ) : (
                             <Leaf className="h-5 w-5 text-forest" />
                           )}
-                          <h2 className="font-display text-2xl text-forest-deep font-semibold">
+                          <h2 className="font-display text-xl text-forest-deep font-semibold">
                             {catInfo?.label || catId}
                           </h2>
                         </div>
-                        <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                        <p className="mt-2.5 text-xs leading-relaxed text-muted-foreground">
                           {catInfo?.description}
                         </p>
                       </div>
@@ -250,37 +250,35 @@ function ProductsPage() {
                     </div>
                   </div>
 
-                  {/* Bulleted Product List Grid */}
-                  <div className="lg:col-span-8">
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-5">
-                      {catProducts.map((p) => (
-                        <li key={p.slug}>
-                          <button
-                            onClick={() => setSelectedProduct(p)}
-                            className="w-full flex items-start gap-3.5 text-left group p-3 -mx-3 rounded-lg hover:bg-sage-soft/30 transition-all duration-350 cursor-pointer"
-                          >
-                            {/* Accent Bullet */}
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-forest flex-shrink-0 group-hover:scale-150 group-hover:bg-forest-deep transition-all duration-300" />
-                            <div>
-                              <h3 className="font-display text-base font-semibold text-forest-deep group-hover:text-forest transition-colors duration-300">
-                                {p.name}
-                              </h3>
-                              {p.botanical && (
-                                <p className="text-xs italic text-muted-foreground font-light mt-0.5">
-                                  {p.botanical}
-                                </p>
-                              )}
-                              {p.standardization && (
-                                <p className="text-[0.65rem] tracking-wider text-forest font-medium mt-1">
-                                  {p.standardization}
-                                </p>
-                              )}
-                            </div>
-                          </button>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  {/* Bulleted Product List wrapping around the card */}
+                  <ul className="m-0 p-0 list-none">
+                    {catProducts.map((p) => (
+                      <li key={p.slug} className="float-left w-[50%] md:w-[33.33%] lg:w-[25%] p-1.5 h-[115px] lg:h-[110px] box-border">
+                        <button
+                          onClick={() => setSelectedProduct(p)}
+                          className="w-full h-full flex items-start gap-3 text-left group p-2.5 rounded-lg hover:bg-sage-soft/30 transition-all duration-350 cursor-pointer border border-transparent hover:border-border/30"
+                        >
+                          {/* Accent Bullet */}
+                          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-forest flex-shrink-0 group-hover:scale-150 group-hover:bg-forest-deep transition-all duration-300" />
+                          <div>
+                            <h3 className="font-display text-[15px] font-semibold text-forest-deep group-hover:text-forest transition-colors duration-300 line-clamp-2 leading-snug">
+                              {p.name}
+                            </h3>
+                            {p.botanical && (
+                              <p className="text-xs italic text-muted-foreground font-light mt-0.5 line-clamp-1">
+                                {p.botanical}
+                              </p>
+                            )}
+                            {p.standardization && (
+                              <p className="text-[0.65rem] tracking-wider text-forest font-semibold uppercase mt-1.5 line-clamp-1">
+                                {p.standardization}
+                              </p>
+                            )}
+                          </div>
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               );
             })}
@@ -347,12 +345,6 @@ function ProductsPage() {
                   <div>
                     <span className="text-xs text-muted-foreground font-medium uppercase tracking-wider block">Origin</span>
                     <span className="text-forest-deep font-medium mt-0.5 block">{selectedProduct.origin}</span>
-                  </div>
-                )}
-                {selectedProduct.packaging && (
-                  <div>
-                    <span className="text-xs text-muted-foreground font-medium uppercase tracking-wider block">Packaging</span>
-                    <span className="text-forest-deep font-medium mt-0.5 block">{selectedProduct.packaging}</span>
                   </div>
                 )}
               </div>

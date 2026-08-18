@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" role="img" aria-label="Saffron stigmas and extract powder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff4d7"/>
+      <stop offset="0.52" stop-color="#f4c778"/>
+      <stop offset="1" stop-color="#8f3421"/>
+    </linearGradient>
+    <linearGradient id="thread" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c1281c"/>
+      <stop offset="0.45" stop-color="#d9531f"/>
+      <stop offset="1" stop-color="#7f1712"/>
+    </linearGradient>
+    <radialGradient id="powder" cx="45%" cy="34%" r="68%">
+      <stop offset="0" stop-color="#ffcf5c"/>
+      <stop offset="0.62" stop-color="#d36c24"/>
+      <stop offset="1" stop-color="#8f2919"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#4d170e" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="800" fill="url(#bg)"/>
+  <circle cx="170" cy="150" r="108" fill="#fff5c4" opacity="0.36"/>
+  <circle cx="840" cy="606" r="172" fill="#4d170e" opacity="0.12"/>
+  <g filter="url(#shadow)">
+    <ellipse cx="503" cy="555" rx="268" ry="78" fill="#4f160c" opacity="0.18"/>
+    <ellipse cx="503" cy="516" rx="245" ry="69" fill="#fff0cd"/>
+    <ellipse cx="503" cy="493" rx="203" ry="47" fill="url(#powder)"/>
+  </g>
+  <g fill="none" stroke="url(#thread)" stroke-width="16" stroke-linecap="round">
+    <path d="M297 411c70 18 137 33 203 15 75-20 132-18 201 21"/>
+    <path d="M267 470c97-42 176-50 249-22 64 25 135 15 212-30"/>
+    <path d="M326 530c68-60 137-80 207-59 66 20 132 5 199-47"/>
+    <path d="M371 367c85 49 164 58 238 26 53-23 102-16 147 18"/>
+  </g>
+  <g fill="none" stroke="#f0a63a" stroke-width="6" stroke-linecap="round" opacity="0.72">
+    <path d="M316 414c68 14 128 24 181 9"/>
+    <path d="M291 468c88-35 161-41 219-18"/>
+    <path d="M395 526c58-44 110-56 158-41"/>
+  </g>
+  <g transform="translate(570 170)">
+    <path d="M0 186c-10-76 8-139 54-188 42 54 44 117 4 190z" fill="#61331f" opacity="0.28"/>
+    <path d="M-17 174c-72-40-105-95-96-165 75 24 113 78 96 165z" fill="#e7b569" opacity="0.8"/>
+    <path d="M40 177c82-17 139 8 172 76-79 24-137-1-172-76z" fill="#b74325" opacity="0.85"/>
+    <path d="M16 184c18-66 62-109 132-129 10 72-31 117-132 129z" fill="#f1d08b" opacity="0.72"/>
+  </g>
+  <g fill="#81301b" opacity="0.32">
+    <circle cx="232" cy="642" r="8"/>
+    <circle cx="802" cy="242" r="10"/>
+    <circle cx="764" cy="188" r="6"/>
+    <circle cx="176" cy="278" r="7"/>
+  </g>
+</svg>

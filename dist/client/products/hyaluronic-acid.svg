@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" role="img" aria-label="Hyaluronic acid hydration ingredient">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4fbff"/>
+      <stop offset="0.52" stop-color="#c7e6ef"/>
+      <stop offset="1" stop-color="#6fa7b6"/>
+    </linearGradient>
+    <radialGradient id="drop" cx="35%" cy="26%" r="72%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="0.58" stop-color="#b9eef4" stop-opacity="0.86"/>
+      <stop offset="1" stop-color="#4b94a8" stop-opacity="0.72"/>
+    </radialGradient>
+    <radialGradient id="powder" cx="45%" cy="35%" r="65%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.7" stop-color="#dceef1"/>
+      <stop offset="1" stop-color="#b5d0d8"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#235061" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="800" fill="url(#bg)"/>
+  <circle cx="820" cy="150" r="112" fill="#ffffff" opacity="0.3"/>
+  <circle cx="160" cy="606" r="150" fill="#2b7f8e" opacity="0.14"/>
+  <g opacity="0.32" fill="none" stroke="#ffffff" stroke-width="5">
+    <path d="M156 236c92 41 171 42 237 2 68-41 144-38 229 11 64 37 135 43 213 17"/>
+    <path d="M114 318c88 34 166 32 233-8 77-45 156-39 238 17 62 42 132 50 211 25"/>
+  </g>
+  <g filter="url(#shadow)">
+    <ellipse cx="508" cy="555" rx="250" ry="72" fill="#24576a" opacity="0.16"/>
+    <ellipse cx="508" cy="517" rx="227" ry="67" fill="#f8feff"/>
+    <ellipse cx="508" cy="496" rx="187" ry="46" fill="url(#powder)"/>
+  </g>
+  <path d="M498 112c92 120 164 212 164 314 0 104-75 174-166 174s-166-70-166-174c0-102 74-194 168-314z" fill="url(#drop)" filter="url(#shadow)"/>
+  <path d="M438 264c29-52 64-88 97-126" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.72"/>
+  <circle cx="562" cy="488" r="34" fill="#ffffff" opacity="0.28"/>
+  <g stroke="#e9fbff" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.88">
+    <path d="M238 479h75l42-68 75 125 48-84h84"/>
+    <path d="M623 374h49l29-48 51 85 31-54h61"/>
+  </g>
+  <g fill="#ffffff" opacity="0.72">
+    <circle cx="313" cy="479" r="13"/>
+    <circle cx="430" cy="536" r="13"/>
+    <circle cx="562" cy="452" r="13"/>
+    <circle cx="672" cy="374" r="11"/>
+    <circle cx="752" cy="411" r="11"/>
+    <circle cx="844" cy="357" r="11"/>
+  </g>
+</svg>

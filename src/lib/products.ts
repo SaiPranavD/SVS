@@ -86,7 +86,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Bitter Melon extract to support glycemic balance",
     "image": "/products/momordica-charantia-extract.jpg",
-    "standardization": "Charantin â‰¥ 5% / 10%",
+    "standardization": "Charantin ≥ 5% / 10%",
     "partUsed": "Fruit",
     "origin": "India",
     "benefits": [
@@ -119,7 +119,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Premium Kava Kava extract for relaxation and stress support",
     "image": "/products/kava-extract.jpg",
-    "standardization": "Kavalactones â‰¥ 30%",
+    "standardization": "Kavalactones ≥ 30%",
     "partUsed": "Root",
     "origin": "Vanuatu / India",
     "benefits": [
@@ -152,7 +152,7 @@ export const products: Product[] = [
     "category": "phytochemicals",
     "tagline": "Highly purified Hyaluronic Acid for tissue and skin hydration",
     "image": "/products/hyaluronic-acid.svg",
-    "standardization": "Glucuronic Acid â‰¥ 45%",
+    "standardization": "Glucuronic Acid ≥ 45%",
     "partUsed": "Fermentation",
     "origin": "India",
     "benefits": [
@@ -185,7 +185,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Gymnema extract to support glucose metabolism",
     "image": "/products/gymnema-sylvestre-extract.jpg",
-    "standardization": "Gymnemic Acids â‰¥ 25% / 75%",
+    "standardization": "Gymnemic Acids ≥ 25% / 75%",
     "partUsed": "Leaf",
     "origin": "India",
     "benefits": [
@@ -218,7 +218,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Premium Panax Ginseng extract for vitality and cognitive support",
     "image": "/products/ginseng-extract.jpg",
-    "standardization": "Ginsenosides â‰¥ 10% / 20% / 80%",
+    "standardization": "Ginsenosides ≥ 10% / 20% / 80%",
     "partUsed": "Root",
     "origin": "India / China",
     "benefits": [
@@ -251,7 +251,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Ginger extract for digestive comfort and wellness",
     "image": "/products/ginger-extract.jpg",
-    "standardization": "Gingerols â‰¥ 5% / 10%",
+    "standardization": "Gingerols ≥ 5% / 10%",
     "partUsed": "Rhizome",
     "origin": "India",
     "benefits": [
@@ -284,7 +284,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Premium Fenugreek extract supporting metabolic and hormonal balance",
     "image": "/products/fenugreek-extract.png",
-    "standardization": "Saponins â‰¥ 50%",
+    "standardization": "Saponins ≥ 50%",
     "partUsed": "Seed",
     "origin": "India",
     "benefits": [
@@ -317,7 +317,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Potent Echinacea extract for seasonal immune defense",
     "image": "/products/echinacea-extract.jpg",
-    "standardization": "Polyphenols â‰¥ 4%",
+    "standardization": "Polyphenols ≥ 4%",
     "partUsed": "Aerial Parts",
     "origin": "India",
     "benefits": [
@@ -350,7 +350,7 @@ export const products: Product[] = [
     "category": "essential-oils",
     "tagline": "Pure cold-pressed Evening Primrose Oil rich in GLA",
     "image": "/products/evening-primrose-oil.jpg",
-    "standardization": "Gamma-Linolenic Acid (GLA) â‰¥ 9% / 10%",
+    "standardization": "Gamma-Linolenic Acid (GLA) ≥ 9% / 10%",
     "partUsed": "Seed",
     "origin": "India",
     "benefits": [
@@ -383,7 +383,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Green Tea extract rich in polyphenols and EGCG",
     "image": "/products/green-tea-extract.jpg",
-    "standardization": "Polyphenols â‰¥ 50%, EGCG â‰¥ 15% / 50%",
+    "standardization": "Polyphenols ≥ 50%, EGCG ≥ 15% / 50%",
     "partUsed": "Leaf",
     "origin": "India",
     "benefits": [
@@ -416,7 +416,7 @@ export const products: Product[] = [
     "category": "natural-minerals",
     "tagline": "High-purity Tribulus extract supporting vitality and mineral transport",
     "image": "/products/tribulus-terrestris-extract.png",
-    "standardization": "Saponins â‰¥ 40% / 90%",
+    "standardization": "Saponins ≥ 40% / 90%",
     "partUsed": "Fruit",
     "origin": "India",
     "benefits": [
@@ -449,7 +449,7 @@ export const products: Product[] = [
     "category": "carotenoids",
     "tagline": "Premium natural Lycopene extract from vine-ripened tomatoes",
     "image": "/products/lycopene-extract.jpg",
-    "standardization": "Lycopene â‰¥ 5% / 10% / 20%",
+    "standardization": "Lycopene ≥ 5% / 10% / 20%",
     "partUsed": "Fruit",
     "origin": "India",
     "benefits": [
@@ -482,7 +482,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Cinnamon extract supporting metabolic wellness",
     "image": "/organic-products/cinnamon-bark-extract.jpg",
-    "standardization": "Polyphenols â‰¥ 10% / 20%",
+    "standardization": "Polyphenols ≥ 10% / 20%",
     "partUsed": "Bark",
     "origin": "India / Vietnam",
     "benefits": [
@@ -515,7 +515,7 @@ export const products: Product[] = [
     "category": "phytochemicals",
     "tagline": "Premium yeast extract standardized to high L-Glutathione content",
     "image": "/products/glutathione-yeast-extract.svg",
-    "standardization": "L-Glutathione â‰¥ 8% / 15%",
+    "standardization": "L-Glutathione ≥ 8% / 15%",
     "partUsed": "Yeast Cell",
     "origin": "India / China",
     "benefits": [
@@ -548,7 +548,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Shatavari extract supporting female hormonal vitality",
     "image": "/organic-products/asparagus-extract.jpg",
-    "standardization": "Saponins â‰¥ 20% / 40%",
+    "standardization": "Saponins ≥ 20% / 40%",
     "partUsed": "Root",
     "origin": "India",
     "benefits": [
@@ -581,7 +581,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Ginkgo extract for microcirculation and cognitive health",
     "image": "/products/ginkgo-biloba-extract.jpg",
-    "standardization": "Flavone Glycosides â‰¥ 24%, Lactones â‰¥ 6%",
+    "standardization": "Flavone Glycosides ≥ 24%, Lactones ≥ 6%",
     "partUsed": "Leaf",
     "origin": "India",
     "benefits": [
@@ -614,7 +614,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Medhya Rasayana grade Ashwagandha extract for stress & cortisol management",
     "image": "/products/ashwagandha-extract.jpg",
-    "standardization": "Withanolides â‰¥ 2.5% / 5% / 8%",
+    "standardization": "Withanolides ≥ 2.5% / 5% / 8%",
     "partUsed": "Root",
     "origin": "India",
     "benefits": [
@@ -647,7 +647,7 @@ export const products: Product[] = [
     "category": "natural-vitamins",
     "tagline": "Premium nutrient-dense blue-green algae powder",
     "image": "/products/spirulina-powder.jpg",
-    "standardization": "Protein â‰¥ 60%",
+    "standardization": "Protein ≥ 60%",
     "partUsed": "Whole Biomass",
     "origin": "India",
     "benefits": [
@@ -680,7 +680,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Banaba leaf extract supporting glycemic pathways",
     "image": "/products/banaba-extract.jpg",
-    "standardization": "Corosolic Acid â‰¥ 1% / 10%",
+    "standardization": "Corosolic Acid ≥ 1% / 10%",
     "partUsed": "Leaf",
     "origin": "India",
     "benefits": [
@@ -746,7 +746,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Boswellia extract for joint mobility and comfort",
     "image": "/products/boswellia-serrata-extract.jpg",
-    "standardization": "Boswellic Acids â‰¥ 65%, AKBA â‰¥ 10%",
+    "standardization": "Boswellic Acids ≥ 65%, AKBA ≥ 10%",
     "partUsed": "Gum Resin",
     "origin": "India",
     "benefits": [
@@ -779,7 +779,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Premium weight-management support standardized to Hydroxycitric Acid",
     "image": "/products/garcinia-cambogia-extract.jpg",
-    "standardization": "Hydroxycitric Acid (HCA) â‰¥ 50% / 60%",
+    "standardization": "Hydroxycitric Acid (HCA) ≥ 50% / 60%",
     "partUsed": "Fruit Rind",
     "origin": "India",
     "benefits": [
@@ -812,7 +812,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Traditional Kattha extract rich in active catechins",
     "image": "/products/acacia-catechu.jpg",
-    "standardization": "Catechins â‰¥ 10% / 20%",
+    "standardization": "Catechins ≥ 10% / 20%",
     "partUsed": "Heartwood",
     "origin": "India",
     "benefits": [
@@ -845,7 +845,7 @@ export const products: Product[] = [
     "category": "natural-vitamins",
     "tagline": "Excellent source of organic Vitamin C from Acerola cherries",
     "image": "/signature-products/acerola-extract-vitamin-c.jpg",
-    "standardization": "Vitamin C â‰¥ 17% / 25%",
+    "standardization": "Vitamin C ≥ 17% / 25%",
     "partUsed": "Fruit",
     "origin": "India / Brazil",
     "benefits": [
@@ -878,7 +878,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Pure, standardized Turmeric extract rich in curcuminoids",
     "image": "/products/turmeric.jpg",
-    "standardization": "Curcuminoids â‰¥ 95%",
+    "standardization": "Curcuminoids ≥ 95%",
     "partUsed": "Rhizome",
     "origin": "India",
     "benefits": [
@@ -911,7 +911,7 @@ export const products: Product[] = [
     "category": "carotenoids",
     "tagline": "Pure Zeaxanthin extract supporting macular and retinal health",
     "image": "/carotenoids/1730884803.jpg",
-    "standardization": "Zeaxanthin â‰¥ 5% / 10% / 20%",
+    "standardization": "Zeaxanthin ≥ 5% / 10% / 20%",
     "partUsed": "Flower",
     "origin": "India",
     "benefits": [
@@ -944,7 +944,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Vasaka extract for respiratory comfort and support",
     "image": "/products/adhatoda-vasica.jpg",
-    "standardization": "Vasicine â‰¥ 1%",
+    "standardization": "Vasicine ≥ 1%",
     "partUsed": "Leaf",
     "origin": "India",
     "benefits": [
@@ -977,7 +977,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Aloe vera leaf extract rich in polysaccharides",
     "image": "/products/aloe-vera-extract.jpg",
-    "standardization": "Aloin â‰¤ 10ppm / Polysaccharides â‰¥ 10%",
+    "standardization": "Aloin ≤ 10ppm / Polysaccharides ≥ 10%",
     "partUsed": "Leaf Gel",
     "origin": "India",
     "benefits": [
@@ -1010,7 +1010,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "High-potency Amla extract rich in Vitamin C and tannins",
     "image": "/products/amla-extract.jpg",
-    "standardization": "Tannins â‰¥ 30% / 40%",
+    "standardization": "Tannins ≥ 30% / 40%",
     "partUsed": "Fruit",
     "origin": "India",
     "benefits": [
@@ -1043,7 +1043,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Kalmegh extract supporting seasonal immunity",
     "image": "/products/andrographis-paniculata-extract.jpg",
-    "standardization": "Andrographolides â‰¥ 10% / 30% / 50%",
+    "standardization": "Andrographolides ≥ 10% / 30% / 50%",
     "partUsed": "Whole Herb",
     "origin": "India",
     "benefits": [
@@ -1076,7 +1076,7 @@ export const products: Product[] = [
     "category": "carotenoids",
     "tagline": "Highly potent natural antioxidant from microalgae",
     "image": "/carotenoids/1730884848.jpg",
-    "standardization": "Astaxanthin â‰¥ 1% / 2% / 5% / 10%",
+    "standardization": "Astaxanthin ≥ 1% / 2% / 5% / 10%",
     "partUsed": "Whole Algae",
     "origin": "India",
     "benefits": [
@@ -1109,7 +1109,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Brahmi extract supporting cognitive wellness",
     "image": "/products/bacopa-monnieri-extract.jpg",
-    "standardization": "Bacosides â‰¥ 20% / 50%",
+    "standardization": "Bacosides ≥ 20% / 50%",
     "partUsed": "Whole Herb",
     "origin": "India",
     "benefits": [
@@ -1142,7 +1142,7 @@ export const products: Product[] = [
     "category": "natural-vitamins",
     "tagline": "Premium organic Beet Root powder rich in nitrates",
     "image": "/organic-products/beetroot-extract.jpg",
-    "standardization": "Nitrates â‰¥ 1.5%",
+    "standardization": "Nitrates ≥ 1.5%",
     "partUsed": "Root",
     "origin": "India",
     "benefits": [
@@ -1175,7 +1175,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "High-purity Daruharidra extract supporting metabolic health",
     "image": "/products/berberis-aristata-extract.jpg",
-    "standardization": "Berberine HCl â‰¥ 97%",
+    "standardization": "Berberine HCl ≥ 97%",
     "partUsed": "Root / Bark",
     "origin": "India",
     "benefits": [
@@ -1208,7 +1208,7 @@ export const products: Product[] = [
     "category": "natural-vitamins",
     "tagline": "Natural source of pro-vitamin A for nutritional reinforcement",
     "image": "/products/beta-carotene-powder.jpg",
-    "standardization": "Beta-carotene â‰¥ 1% / 5% / 10% / 20%",
+    "standardization": "Beta-carotene ≥ 1% / 5% / 10% / 20%",
     "partUsed": "Fermentation",
     "origin": "India",
     "benefits": [
@@ -1241,7 +1241,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Highly purified Black Pepper extract standardized for maximum absorption rate",
     "image": "/products/black-pepper-extract.jpg",
-    "standardization": "Piperine â‰¥ 95%",
+    "standardization": "Piperine ≥ 95%",
     "partUsed": "Fruit",
     "origin": "India",
     "benefits": [
@@ -1307,7 +1307,7 @@ export const products: Product[] = [
     "category": "phytochemicals",
     "tagline": "Natural anhydrous caffeine for energy and alertness",
     "image": "/products/caffeine-extract.jpg",
-    "standardization": "Caffeine â‰¥ 98%",
+    "standardization": "Caffeine ≥ 98%",
     "partUsed": "Bean",
     "origin": "India",
     "benefits": [
@@ -1340,7 +1340,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Chamomile extract for calm and digestion",
     "image": "/products/chamomile-extract.svg",
-    "standardization": "Apigenin â‰¥ 1.2% / 3%",
+    "standardization": "Apigenin ≥ 1.2% / 3%",
     "partUsed": "Flower",
     "origin": "India",
     "benefits": [
@@ -1373,7 +1373,7 @@ export const products: Product[] = [
     "category": "phytochemicals",
     "tagline": "High-grade Chondroitin for cartilage structure and joint cushioning",
     "image": "/products/ocimum-basilicum-tulsi-leaf-oil.jpg",
-    "standardization": "Chondroitin Sodium Sulfate â‰¥ 90%",
+    "standardization": "Chondroitin Sodium Sulfate ≥ 90%",
     "partUsed": "Cartilage",
     "origin": "India",
     "benefits": [
@@ -1406,7 +1406,7 @@ export const products: Product[] = [
     "category": "phytochemicals",
     "tagline": "Standardized Citrus Bioflavonoids for capillary strength and immunity",
     "image": "/products/citrus-bioflavonoids-extract.png",
-    "standardization": "Bioflavonoids â‰¥ 50%",
+    "standardization": "Bioflavonoids ≥ 50%",
     "partUsed": "Fruit",
     "origin": "India",
     "benefits": [
@@ -1439,7 +1439,7 @@ export const products: Product[] = [
     "category": "phytochemicals",
     "tagline": "High-purity Coenzyme Q10 for cellular energy & cardiovascular health",
     "image": "/products/coenzyme-q10.jpg",
-    "standardization": "Coenzyme Q10 â‰¥ 98%",
+    "standardization": "Coenzyme Q10 ≥ 98%",
     "partUsed": "Fermentation",
     "origin": "India",
     "benefits": [
@@ -1472,7 +1472,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Coleus extract supporting cellular energy pathways",
     "image": "/products/coleus-forskohlii-extract.jpg",
-    "standardization": "Forskolin â‰¥ 10% / 20%",
+    "standardization": "Forskolin ≥ 10% / 20%",
     "partUsed": "Root",
     "origin": "India",
     "benefits": [
@@ -1505,7 +1505,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Curry Leaf extract rich in plant iron and antioxidants",
     "image": "/products/curry-leaf-extract.jpg",
-    "standardization": "Antioxidant Activity â‰¥ 30%",
+    "standardization": "Antioxidant Activity ≥ 30%",
     "partUsed": "Leaf",
     "origin": "India",
     "benefits": [
@@ -1538,7 +1538,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Artichoke extract supporting bile production & digestion",
     "image": "/products/artichoke.jpg",
-    "standardization": "Cynarin â‰¥ 2.5% / 5%",
+    "standardization": "Cynarin ≥ 2.5% / 5%",
     "partUsed": "Leaf",
     "origin": "India",
     "benefits": [
@@ -1571,7 +1571,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Passion Flower extract for calming mood and sleep support",
     "image": "/products/passiflora-incarnata-extract.jpg",
-    "standardization": "Flavonoids â‰¥ 3.5% / 4%",
+    "standardization": "Flavonoids ≥ 3.5% / 4%",
     "partUsed": "Flower / Herb",
     "origin": "India",
     "benefits": [
@@ -1604,7 +1604,7 @@ export const products: Product[] = [
     "category": "phytochemicals",
     "tagline": "Soy-derived Phosphatidylserine supporting cognitive health",
     "image": "/products/phosphatidylserine.jpg",
-    "standardization": "Phosphatidylserine â‰¥ 20% / 50%",
+    "standardization": "Phosphatidylserine ≥ 20% / 50%",
     "partUsed": "Seed",
     "origin": "India / China",
     "benefits": [
@@ -1637,7 +1637,7 @@ export const products: Product[] = [
     "category": "phytochemicals",
     "tagline": "Sugarcane wax extract supporting healthy cholesterol levels",
     "image": "/products/policosanol.jpg",
-    "standardization": "Octacosanol â‰¥ 60%",
+    "standardization": "Octacosanol ≥ 60%",
     "partUsed": "Stem Wax",
     "origin": "India",
     "benefits": [
@@ -1670,7 +1670,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Vijayasar extract supporting glycemic homeostasis",
     "image": "/products/pterocarpus-marsupium-extract.jpg",
-    "standardization": "Pterostilbene â‰¥ 5%",
+    "standardization": "Pterostilbene ≥ 5%",
     "partUsed": "Heartwood",
     "origin": "India",
     "benefits": [
@@ -1703,7 +1703,7 @@ export const products: Product[] = [
     "category": "phytochemicals",
     "tagline": "Highly purified Quercetin extract for seasonal immune response",
     "image": "/products/quercetin.jpg",
-    "standardization": "Quercetin â‰¥ 95%",
+    "standardization": "Quercetin ≥ 95%",
     "partUsed": "Flower",
     "origin": "India",
     "benefits": [
@@ -1736,7 +1736,7 @@ export const products: Product[] = [
     "category": "phytochemicals",
     "tagline": "Standardized Trans-Resveratrol supporting longevity & cellular health",
     "image": "/products/resveratrol.jpg",
-    "standardization": "Trans-Resveratrol â‰¥ 98%",
+    "standardization": "Trans-Resveratrol ≥ 98%",
     "partUsed": "Root",
     "origin": "India",
     "benefits": [
@@ -1769,7 +1769,7 @@ export const products: Product[] = [
     "category": "herbal-extracts",
     "tagline": "Standardized Senna extract for healthy bowel regularity",
     "image": "/products/senna-extract.jpeg",
-    "standardization": "Sennosides â‰¥ 20%",
+    "standardization": "Sennosides ≥ 20%",
     "partUsed": "Leaf / Pod",
     "origin": "India",
     "benefits": [
@@ -1802,7 +1802,7 @@ export const products: Product[] = [
     "category": "natural-minerals",
     "tagline": "High-purity cholesterol for liposomes and pharmaceutical formulations",
     "image": "/products/pure-white-powder.jpg",
-    "standardization": "Cholesterol â‰¥ 95%",
+    "standardization": "Cholesterol ≥ 95%",
     "partUsed": "N/A",
     "origin": "India",
     "benefits": [
@@ -1835,7 +1835,7 @@ export const products: Product[] = [
     "category": "natural-minerals",
     "tagline": "Essential trace mineral to support glucose tolerance and insulin sensitivity",
     "image": "/products/green-crystals.jpg",
-    "standardization": "Chromium â‰¥ 99%",
+    "standardization": "Chromium ≥ 99%",
     "partUsed": "N/A",
     "origin": "India",
     "benefits": [
@@ -1867,7 +1867,7 @@ export const products: Product[] = [
     "category": "natural-minerals",
     "tagline": "Natural preservative and acidulant for food and pharmaceuticals",
     "image": "/vitamins/citrus-limon.jpg",
-    "standardization": "Anhydrous / Monohydrate â‰¥ 99.5%",
+    "standardization": "Anhydrous / Monohydrate ≥ 99.5%",
     "partUsed": "N/A",
     "origin": "India",
     "benefits": [
@@ -1899,7 +1899,7 @@ export const products: Product[] = [
     "category": "natural-minerals",
     "tagline": "Natural stabilizer, binder, and dietary fiber source",
     "image": "/products/acacia-catechu.jpg",
-    "standardization": "Soluble dietary fiber â‰¥ 85%",
+    "standardization": "Soluble dietary fiber ≥ 85%",
     "partUsed": "Bark exudate",
     "origin": "India",
     "benefits": [
@@ -1998,7 +1998,7 @@ export const products: Product[] = [
     "category": "natural-minerals",
     "tagline": "Essential magnesium salt for electrolyte balance and pharmaceutical applications",
     "image": "/products/pure-white-powder.jpg",
-    "standardization": "Magnesium Sulphate â‰¥ 99.5%",
+    "standardization": "Magnesium Sulphate ≥ 99.5%",
     "partUsed": "N/A",
     "origin": "India",
     "benefits": [
@@ -2064,7 +2064,7 @@ export const products: Product[] = [
     "category": "natural-vitamins",
     "tagline": "Plant-derived D-Biotin to support hair, skin, and nail health",
     "image": "/vitamins/sesbania-grandiflora.jpg",
-    "standardization": "D-Biotin â‰¥ 1% / 2%",
+    "standardization": "D-Biotin ≥ 1% / 2%",
     "partUsed": "Leaf",
     "origin": "India",
     "benefits": [
@@ -2097,7 +2097,7 @@ export const products: Product[] = [
     "category": "natural-minerals",
     "tagline": "Precipitated calcium carbonate for bone density and calcium fortification",
     "image": "/minerals/moringa-leaf-extract.jpg",
-    "standardization": "Calcium â‰¥ 38%",
+    "standardization": "Calcium ≥ 38%",
     "partUsed": "N/A",
     "origin": "India",
     "benefits": [
@@ -2130,7 +2130,7 @@ export const products: Product[] = [
     "category": "natural-minerals",
     "tagline": "Essential trace mineral to support iron absorption and connective tissue health",
     "image": "/products/blue-crystals.jpg",
-    "standardization": "Copper content â‰¥ 25%",
+    "standardization": "Copper content ≥ 25%",
     "partUsed": "N/A",
     "origin": "India",
     "benefits": [
@@ -2162,7 +2162,7 @@ export const products: Product[] = [
     "category": "natural-minerals",
     "tagline": "Trace mineral to support bone health and antioxidant enzyme systems",
     "image": "/products/pink-crystals.jpg",
-    "standardization": "Manganese content â‰¥ 32%",
+    "standardization": "Manganese content ≥ 32%",
     "partUsed": "N/A",
     "origin": "India",
     "benefits": [
@@ -2194,7 +2194,7 @@ export const products: Product[] = [
     "category": "natural-vitamins",
     "tagline": "Plant-derived Thiamine mononitrate to support cardiovascular and nervous system health",
     "image": "/minerals/psidium-guajava.jpg",
-    "standardization": "Thiamine â‰¥ 5% / 10%",
+    "standardization": "Thiamine ≥ 5% / 10%",
     "partUsed": "Fruit",
     "origin": "India",
     "benefits": [
@@ -2227,7 +2227,7 @@ export const products: Product[] = [
     "category": "natural-vitamins",
     "tagline": "High-potency fermented Methylcobalamin to support red blood cell formation and cognitive function",
     "image": "/vitamins/spirulina-powder.jpg",
-    "standardization": "Methylcobalamin â‰¥ 1%",
+    "standardization": "Methylcobalamin ≥ 1%",
     "partUsed": "Whole cell",
     "origin": "India",
     "benefits": [
@@ -2260,7 +2260,7 @@ export const products: Product[] = [
     "category": "natural-vitamins",
     "tagline": "Natural Riboflavin to support vision, mitochondrial energy, and antioxidant activity",
     "image": "/minerals/psidium-guajava.jpg",
-    "standardization": "Riboflavin â‰¥ 5% / 10%",
+    "standardization": "Riboflavin ≥ 5% / 10%",
     "partUsed": "Leaf / Fruit",
     "origin": "India",
     "benefits": [
@@ -2293,7 +2293,7 @@ export const products: Product[] = [
     "category": "natural-vitamins",
     "tagline": "Plant-derived IP-grade Niacinamide to support healthy skin barrier and cellular repair",
     "image": "/minerals/ocimum-basilicum-tulsi-leaf-oil.jpg",
-    "standardization": "Niacinamide â‰¥ 5% / 10%",
+    "standardization": "Niacinamide ≥ 5% / 10%",
     "partUsed": "Leaf / Fruit",
     "origin": "India",
     "benefits": [
@@ -2326,7 +2326,7 @@ export const products: Product[] = [
     "category": "natural-vitamins",
     "tagline": "Natural Pantothenic acid to support adrenal function and stress resilience",
     "image": "/minerals/psidium-guajava.jpg",
-    "standardization": "Pantothenic Acid â‰¥ 5% / 10%",
+    "standardization": "Pantothenic Acid ≥ 5% / 10%",
     "partUsed": "Leaf / Fruit",
     "origin": "India",
     "benefits": [
@@ -2359,7 +2359,7 @@ export const products: Product[] = [
     "category": "natural-vitamins",
     "tagline": "Plant-sourced Pyridoxine to support neurotransmitter synthesis and immune function",
     "image": "/minerals/psidium-guajava.jpg",
-    "standardization": "Pyridoxine â‰¥ 5% / 10%",
+    "standardization": "Pyridoxine ≥ 5% / 10%",
     "partUsed": "Fruit",
     "origin": "India",
     "benefits": [
@@ -2392,7 +2392,7 @@ export const products: Product[] = [
     "category": "natural-vitamins",
     "tagline": "Plant-derived Folate for prenatal health, cellular division, and cardiovascular support",
     "image": "/vitamins/citrus-limon.jpg",
-    "standardization": "Folate â‰¥ 1% / 5%",
+    "standardization": "Folate ≥ 1% / 5%",
     "partUsed": "Peel",
     "origin": "India",
     "benefits": [
@@ -2459,7 +2459,7 @@ export const products: Product[] = [
     "category": "natural-minerals",
     "tagline": "IP-grade potassium salt to support electrolyte balance and nervous transmission",
     "image": "/products/pure-white-powder.jpg",
-    "standardization": "Potassium Chloride â‰¥ 99.0%",
+    "standardization": "Potassium Chloride ≥ 99.0%",
     "partUsed": "N/A",
     "origin": "India",
     "benefits": [
@@ -2492,7 +2492,7 @@ export const products: Product[] = [
     "category": "natural-vitamins",
     "tagline": "B7 Biotin to support healthy metabolism and keratin structure",
     "image": "/vitamins/sesbania-grandiflora.jpg",
-    "standardization": "Biotin â‰¥ 1%",
+    "standardization": "Biotin ≥ 1%",
     "partUsed": "Leaf",
     "origin": "India",
     "benefits": [
@@ -2524,7 +2524,7 @@ export const products: Product[] = [
     "category": "natural-vitamins",
     "tagline": "Vitamin K3 (Menadione) for specific wellness and industrial application support",
     "image": "/products/pure-white-powder.jpg",
-    "standardization": "Menadione â‰¥ 50% / 96%",
+    "standardization": "Menadione ≥ 50% / 96%",
     "partUsed": "N/A",
     "origin": "India",
     "benefits": [
