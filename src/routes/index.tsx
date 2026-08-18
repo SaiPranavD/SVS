@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useEffect } from "react";
 import {
   ArrowRight,
   Leaf,
@@ -30,6 +31,29 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          }
+        });
+      },
+      {
+        threshold: 0.05,
+        rootMargin: "0px 0px -60px 0px",
+      }
+    );
+
+    const elements = document.querySelectorAll(".reveal");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => {
+      elements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+
   return (
     <>
       {/* HERO SECTION */}
@@ -44,7 +68,7 @@ function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-forest-deep via-forest-deep/85 to-forest-deep/60" />
         </div>
 
-        <div className="container-editorial relative z-10">
+        <div className="container-editorial relative z-10 reveal">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold tracking-[0.2em] text-cream/70 uppercase">Goodness. By Nature.</p>
             <h1 className="mt-6 font-display text-[2.75rem] leading-[1.05] tracking-tight text-white md:text-[4.25rem] font-semibold">
@@ -70,7 +94,7 @@ function Home() {
 
       {/* ABOUT & STATS SECTION */}
       <section className="bg-bone py-24 border-b border-border/40">
-        <div className="container-editorial">
+        <div className="container-editorial reveal">
           <div className="grid gap-12 lg:grid-cols-12 items-center">
             <div className="lg:col-span-5">
               <p className="eyebrow">Shaping the Industry since 2006</p>
@@ -104,7 +128,7 @@ function Home() {
 
       {/* EXPLORE SOLUTIONS (PRODUCT CATEGORIES) */}
       <section className="py-24 bg-card border-b border-border/40">
-        <div className="container-editorial">
+        <div className="container-editorial reveal">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="eyebrow">Explore Our Solutions</p>
             <h2 className="mt-3 font-display text-4xl text-forest-deep font-semibold">Elevating Natural Ingredients</h2>
@@ -162,7 +186,7 @@ function Home() {
 
       {/* CORE PILLARS SECTION */}
       <section className="bg-bone py-24 border-b border-border/40">
-        <div className="container-editorial">
+        <div className="container-editorial reveal">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="eyebrow">Our Key Pillars</p>
             <h2 className="mt-3 font-display text-4xl text-forest-deep font-semibold">Quality &amp; Innovation First</h2>
@@ -209,7 +233,7 @@ function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-forest-deep via-forest-deep/90 to-transparent" />
         </div>
 
-        <div className="container-editorial relative z-10">
+        <div className="container-editorial relative z-10 reveal">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold tracking-[0.2em] text-cream/70 uppercase">Sustainability</p>
             <h2 className="mt-4 font-display text-4xl text-white md:text-5xl font-semibold leading-tight">
