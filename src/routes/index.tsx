@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState, useEffect } from "react";
 import {
   ArrowRight,
   Leaf,
@@ -12,30 +11,7 @@ import {
   Package,
 } from "lucide-react";
 import heroImg from "@/assets/hero-botanical.jpg";
-import labImg from "@/assets/research-lab.jpg";
-import farmImg from "@/assets/sustainability-farm.jpg";
 import { products } from "@/lib/products";
-
-const slides = [
-  {
-    image: heroImg,
-    title: "Curcuma longa L.",
-    subtitle: "BATCH 24-CU-0912 · ≥ 95% CURCUMINOIDS (HPLC)",
-    alt: "Macro photograph of a green botanical leaf with water droplets"
-  },
-  {
-    image: farmImg,
-    title: "Piper nigrum L.",
-    subtitle: "BATCH 24-PP-0841 · ≥ 95% PIPERINE (HPLC)",
-    alt: "Ethical botanical cultivation field at sunrise"
-  },
-  {
-    image: labImg,
-    title: "Withania somnifera L.",
-    subtitle: "BATCH 24-AS-1102 · ≥ 5% WITHANOLIDES (HPLC)",
-    alt: "Advanced phytochemistry research and testing laboratory"
-  }
-];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -52,95 +28,55 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
-  const [activeSlide, setActiveSlide] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % slides.length);
-    }, 6000);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative min-h-[90vh] bg-bone flex items-center py-20">
-        <div className="container-editorial grid gap-12 md:grid-cols-12 items-center">
-          <div className="md:col-span-6">
-            <p className="eyebrow">Standardized botanical extracts &amp; ingredients</p>
-            <h1 className="mt-6 font-display text-[2.75rem] leading-[1.02] tracking-tight text-forest-deep md:text-[4rem]">
+      <section className="relative min-h-[92vh] flex items-center py-24 overflow-hidden bg-forest-deep">
+        {/* Background Image with Dark Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src={heroImg}
+            alt="Hero Background"
+            className="h-full w-full object-cover opacity-25"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-forest-deep via-forest-deep/80 to-transparent" />
+        </div>
+
+        <div className="container-editorial relative z-10">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold tracking-[0.2em] text-cream/70 uppercase">Standardized botanical extracts &amp; ingredients</p>
+            <h1 className="mt-6 font-display text-[2.75rem] leading-[1.05] tracking-tight text-white md:text-[4.25rem] font-semibold">
               Quality Ingredients,
               <br />
-              <em className="not-italic text-forest">Trusted Solutions.</em>
+              <span className="text-cream font-normal italic">Trusted Solutions.</span>
             </h1>
-            <p className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground">
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/80">
               SVS Nutraceuticals is a leading supplier and trader of high-quality nutraceutical raw materials, vitamins, minerals, herbal extracts, amino acids, and pharmaceutical excipients.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
                 to="/products"
-                className="group inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3 text-sm font-medium text-primary-foreground transition hover:bg-forest-deep"
+                className="group inline-flex items-center gap-2.5 rounded-full bg-forest px-7 py-3.5 text-base font-semibold text-white transition hover:bg-forest-deep hover:shadow-lg"
               >
                 Explore ingredients
                 <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
               </Link>
             </div>
 
-            <dl className="mt-14 grid grid-cols-3 gap-6 border-t border-border/70 pt-8 text-sm">
+            <dl className="mt-16 grid grid-cols-3 gap-8 border-t border-white/10 pt-8 text-sm max-w-lg">
               <div>
-                <dt className="text-muted-foreground">Ingredients</dt>
-                <dd className="mt-1 font-display text-3xl text-forest-deep">120+</dd>
+                <dt className="text-white/60">Ingredients</dt>
+                <dd className="mt-1 font-display text-3xl font-bold text-white">120+</dd>
               </div>
               <div>
-                <dt className="text-muted-foreground">Countries served</dt>
-                <dd className="mt-1 font-display text-3xl text-forest-deep">42</dd>
+                <dt className="text-white/60">Countries served</dt>
+                <dd className="mt-1 font-display text-3xl font-bold text-white">42</dd>
               </div>
               <div>
-                <dt className="text-muted-foreground">Years of experience</dt>
-                <dd className="mt-1 font-display text-3xl text-forest-deep">20</dd>
+                <dt className="text-white/60">Years of experience</dt>
+                <dd className="mt-1 font-display text-3xl font-bold text-white">20</dd>
               </div>
             </dl>
-          </div>
-
-          <div className="relative md:col-span-6">
-            <div className="relative overflow-hidden rounded-sm shadow-2xl shadow-forest-deep/20 h-[480px] md:h-[620px]">
-              {slides.map((slide, idx) => (
-                <div
-                  key={idx}
-                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                    idx === activeSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-                  }`}
-                >
-                  <img
-                    src={slide.image}
-                    alt={slide.alt}
-                    width={1600}
-                    height={1200}
-                    className="h-full w-full object-cover"
-                  />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-forest-deep/70 to-transparent p-6">
-                    <p className="font-display text-xl text-cream">{slide.title}</p>
-                    <p className="text-xs tracking-widest text-cream/70">
-                      {slide.subtitle}
-                    </p>
-                  </div>
-                </div>
-              ))}
-
-              {/* Slideshow dots/indicators */}
-              <div className="absolute bottom-6 right-6 z-20 flex gap-2">
-                {slides.map((_, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => setActiveSlide(idx)}
-                    aria-label={`Go to slide ${idx + 1}`}
-                    className={`h-1.5 rounded-full transition-all duration-300 ${
-                      idx === activeSlide ? "w-6 bg-cream" : "w-1.5 bg-cream/40"
-                    }`}
-                  />
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>

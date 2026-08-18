@@ -1,1 +1,0 @@
-var e=`/assets/sustainability-farm--I7a7tcJ.jpg`;export{e as t};
