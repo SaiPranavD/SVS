@@ -10,6 +10,7 @@ import {
   Beaker,
   Microscope,
   Package,
+  ChevronDown,
 } from "lucide-react";
 import heroImg from "@/assets/hero-botanical.jpg";
 import labImg from "@/assets/research-lab.jpg";
@@ -57,37 +58,38 @@ function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative min-h-[92vh] flex items-center py-28 overflow-hidden bg-bone">
-        {/* Background Image with Light Overlay */}
+      <section className="relative min-h-[96vh] flex items-center justify-center overflow-hidden bg-forest-deep py-32">
+        {/* Background Image of Green Field with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src={heroImg}
+            src={farmImg}
             alt="Hero Background"
-            className="h-full w-full object-cover opacity-35"
+            className="h-full w-full object-cover opacity-90"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-bone via-bone/75 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
         </div>
 
-        <div className="container-editorial relative z-10 reveal">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold tracking-[0.2em] text-forest uppercase">Goodness. By Nature.</p>
-            <h1 className="mt-6 font-display text-[2.75rem] leading-[1.05] tracking-tight text-forest-deep md:text-[4.25rem] font-semibold">
-              Harnessing goodness
-              <br />
-              <span className="text-forest font-normal italic">for a better world.</span>
-            </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              A global pioneer elevating sensory and wellness experiences with value-added spice innovations, standardized botanical extracts, and pure natural ingredients.
-            </p>
-            <div className="mt-10 flex flex-wrap items-center gap-4">
-              <Link
-                to="/products"
-                className="group inline-flex items-center gap-2.5 rounded-full bg-forest px-8 py-4 text-base font-semibold text-white transition hover:bg-forest-deep hover:shadow-lg"
-              >
-                Discover Our Solutions
-                <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
-              </Link>
-            </div>
+        <div className="container-editorial relative z-10 flex flex-col items-center justify-center text-center reveal mt-8">
+          <h1 className="font-display text-[2.75rem] leading-[1.1] tracking-tight text-white md:text-[5.5rem] font-semibold max-w-5xl">
+            Delivering Nature’s
+            <br />
+            Own Ingredients
+          </h1>
+          <p className="mt-8 max-w-4xl text-lg md:text-xl leading-relaxed text-white/90 font-light">
+            As a global leader, we proudly pioneer in standardized botanical extracts, phytochemicals, essential oils, and wellness ingredients, delivering to 42+ countries with a commitment to providing top-notch quality and innovation.
+          </p>
+          <div className="mt-12">
+            <Link
+              to="/products"
+              className="inline-flex items-center justify-center rounded-full border-2 border-white bg-transparent px-9 py-3.5 text-base font-semibold text-white transition-all duration-300 hover:bg-white hover:text-forest-deep hover:shadow-lg"
+            >
+              Explore Ingredients
+            </Link>
+          </div>
+          
+          {/* Bounce arrow indicator */}
+          <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/50 animate-bounce">
+            <ChevronDown className="h-8 w-8" />
           </div>
         </div>
       </section>
