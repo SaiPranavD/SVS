@@ -48,6 +48,12 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2 text-sm text-cream/80">
             <li>info@svsnutraceuticals.com</li>
             <li>+91 78429 51590</li>
+            <li className="mt-3 text-xs leading-relaxed text-cream/70">
+              <strong>Address:</strong><br />
+              2-6-314, JAIPURI COLONY,<br />
+              BANDLAGUDA, CIRCLE 10,<br />
+              CIRCLE 10, HYDERABAD
+            </li>
             <li className="text-[0.75rem] text-cream/50 mt-4 leading-relaxed">
               FSSAI No: 13626999000489<br />
               GST No: 36CEXPD2886J2ZQ

@@ -86,11 +86,11 @@ function Home() {
               Explore Ingredients
             </Link>
           </div>
-          
-          {/* Bounce arrow indicator */}
-          <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/50 animate-bounce">
-            <ChevronDown className="h-7 w-7" />
-          </div>
+        </div>
+
+        {/* Bounce arrow indicator centered to the screen */}
+        <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/50 animate-bounce z-10">
+          <ChevronDown className="h-7 w-7" />
         </div>
       </section>
 

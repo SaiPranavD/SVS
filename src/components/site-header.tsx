@@ -24,7 +24,7 @@ export function SiteHeader() {
   const isTransparent = isHome && !scrolled;
 
   return (
-    <header className={isHome ? (isTransparent ? "fixed top-0 left-0 right-0 z-50 border-none bg-transparent transition-all duration-300" : "fixed top-0 left-0 right-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur transition-all duration-300") : "sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur"}>
+    <header className={isHome ? (isTransparent ? "fixed top-0 left-0 right-0 z-50 border-none bg-transparent transition-all duration-300" : "fixed top-0 left-0 right-0 z-50 border-b border-border/70 bg-white/95 shadow-sm backdrop-blur transition-all duration-300") : "sticky top-0 z-40 border-b border-border/70 bg-white/95 shadow-sm backdrop-blur"}>
       <div className="container-editorial flex h-20 items-center justify-between gap-8">
         <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
           <img src="/logo-mark.png" alt="SVS Logo" className={`h-9 w-9 object-contain transition-all duration-300 ${isTransparent ? "brightness-0 invert" : ""}`} />
