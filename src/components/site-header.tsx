@@ -1,20 +1,36 @@
 import { Link, useLocation } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const isHome = location.pathname === "/";
 
+  useEffect(() => {
+    if (!isHome) return;
+    const handleScroll = () => {
+      if (window.scrollY > 40) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isHome]);
+
+  const isTransparent = isHome && !scrolled;
+
   return (
-    <header className={isHome ? "absolute top-0 left-0 right-0 z-40 border-none bg-transparent" : "sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur"}>
+    <header className={isHome ? (isTransparent ? "fixed top-0 left-0 right-0 z-50 border-none bg-transparent transition-all duration-300" : "fixed top-0 left-0 right-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur transition-all duration-300") : "sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur"}>
       <div className="container-editorial flex h-20 items-center justify-between gap-8">
         <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <img src="/logo-mark.png" alt="SVS Logo" className="h-9 w-9 object-contain brightness-0 invert" />
+          <img src="/logo-mark.png" alt="SVS Logo" className={`h-9 w-9 object-contain transition-all duration-300 ${isTransparent ? "brightness-0 invert" : ""}`} />
           <div className="flex flex-col">
-            <span className={isHome ? "font-display text-xl leading-none tracking-tight text-white" : "font-display text-xl leading-none tracking-tight text-forest-deep"}>SVS</span>
-            <span className={isHome ? "text-[0.55rem] font-semibold tracking-[0.28em] text-white/80 mt-0.5 leading-none" : "text-[0.55rem] font-medium tracking-[0.28em] text-muted-foreground mt-0.5 leading-none"}>
+            <span className={isTransparent ? "font-display text-xl leading-none tracking-tight text-white transition-colors duration-300" : "font-display text-xl leading-none tracking-tight text-forest-deep transition-colors duration-300"}>SVS</span>
+            <span className={isTransparent ? "text-[0.55rem] font-semibold tracking-[0.28em] text-white/80 mt-0.5 leading-none transition-colors duration-300" : "text-[0.55rem] font-medium tracking-[0.28em] text-muted-foreground mt-0.5 leading-none transition-colors duration-300"}>
               NUTRACEUTICALS
             </span>
           </div>
@@ -22,28 +38,28 @@ export function SiteHeader() {
         <nav className="hidden items-center gap-7 md:flex">
           <Link
             to="/"
-            className={isHome ? "text-[0.85rem] font-semibold tracking-wide text-white/95 transition-colors hover:text-white" : "text-[0.8rem] font-medium tracking-wide text-foreground/75 transition-colors hover:text-forest"}
-            activeProps={{ className: isHome ? "text-white underline decoration-2 underline-offset-8" : "text-forest" }}
+            className={isTransparent ? "text-[0.85rem] font-semibold tracking-wide text-white/95 transition-colors duration-300 hover:text-white" : "text-[0.8rem] font-medium tracking-wide text-foreground/75 transition-colors duration-300 hover:text-forest"}
+            activeProps={{ className: isTransparent ? "text-white underline decoration-2 underline-offset-8" : "text-forest" }}
             activeOptions={{ exact: true }}
           >
             Home
           </Link>
           <Link
             to="/about"
-            className={isHome ? "text-[0.85rem] font-semibold tracking-wide text-white/80 transition-colors hover:text-white" : "text-[0.8rem] font-medium tracking-wide text-foreground/75 transition-colors hover:text-forest"}
-            activeProps={{ className: isHome ? "text-white" : "text-forest" }}
+            className={isTransparent ? "text-[0.85rem] font-semibold tracking-wide text-white/80 transition-colors duration-300 hover:text-white" : "text-[0.8rem] font-medium tracking-wide text-foreground/75 transition-colors duration-300 hover:text-forest"}
+            activeProps={{ className: isTransparent ? "text-white" : "text-forest" }}
           >
             About Us
           </Link>
           <Link
             to="/products"
-            className={isHome ? "text-[0.85rem] font-semibold tracking-wide text-white/80 transition-colors hover:text-white" : "text-[0.8rem] font-medium tracking-wide text-foreground/75 transition-colors hover:text-forest"}
-            activeProps={{ className: isHome ? "text-white" : "text-forest" }}
+            className={isTransparent ? "text-[0.85rem] font-semibold tracking-wide text-white/80 transition-colors duration-300 hover:text-white" : "text-[0.8rem] font-medium tracking-wide text-foreground/75 transition-colors duration-300 hover:text-forest"}
+            activeProps={{ className: isTransparent ? "text-white" : "text-forest" }}
           >
             Products
           </Link>
         </nav>
-        <button className={isHome ? "md:hidden text-white" : "md:hidden text-foreground"} onClick={() => setOpen((o) => !o)} aria-label="Toggle menu">
+        <button className={isTransparent ? "md:hidden text-white" : "md:hidden text-foreground"} onClick={() => setOpen((o) => !o)} aria-label="Toggle menu">
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </div>
