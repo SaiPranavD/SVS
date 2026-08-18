@@ -88,14 +88,21 @@ function Home() {
           </div>
         </div>
 
-        {/* Bounce arrow indicator centered to the screen */}
-        <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/50 animate-bounce z-10">
+        {/* Clickable bounce arrow indicator centered to the screen */}
+        <button
+          onClick={() => {
+            const nextSec = document.getElementById("about-section");
+            nextSec?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/50 hover:text-white transition-colors animate-bounce z-10 cursor-pointer"
+          aria-label="Scroll to next section"
+        >
           <ChevronDown className="h-7 w-7" />
-        </div>
+        </button>
       </section>
 
       {/* ABOUT & STATS SECTION */}
-      <section className="bg-bone py-24 border-b border-border/40">
+      <section id="about-section" className="bg-bone py-24 border-b border-border/40">
         <div className="container-editorial reveal">
           <div className="grid gap-12 lg:grid-cols-12 items-center">
             <div className="lg:col-span-5">

@@ -5,12 +5,8 @@ import { Menu, X } from "lucide-react";
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [isHome, setIsHome] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    setIsHome(window.location.pathname === "/");
-  }, [location.pathname]);
+  const isHome = location.pathname === "/";
 
   useEffect(() => {
     if (!isHome) return;
