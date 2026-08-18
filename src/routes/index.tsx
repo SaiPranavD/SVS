@@ -57,26 +57,26 @@ function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative min-h-[92vh] flex items-center py-28 overflow-hidden bg-forest-deep">
-        {/* Background Image with Dark Overlay */}
+      <section className="relative min-h-[92vh] flex items-center py-28 overflow-hidden bg-bone">
+        {/* Background Image with Light Overlay */}
         <div className="absolute inset-0 z-0">
           <img
             src={heroImg}
             alt="Hero Background"
-            className="h-full w-full object-cover opacity-25"
+            className="h-full w-full object-cover opacity-35"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-forest-deep via-forest-deep/85 to-forest-deep/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-bone via-bone/75 to-transparent" />
         </div>
 
         <div className="container-editorial relative z-10 reveal">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold tracking-[0.2em] text-cream/70 uppercase">Goodness. By Nature.</p>
-            <h1 className="mt-6 font-display text-[2.75rem] leading-[1.05] tracking-tight text-white md:text-[4.25rem] font-semibold">
+            <p className="text-sm font-semibold tracking-[0.2em] text-forest uppercase">Goodness. By Nature.</p>
+            <h1 className="mt-6 font-display text-[2.75rem] leading-[1.05] tracking-tight text-forest-deep md:text-[4.25rem] font-semibold">
               Harnessing goodness
               <br />
-              <span className="text-cream font-normal italic">for a better world.</span>
+              <span className="text-forest font-normal italic">for a better world.</span>
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/80">
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
               A global pioneer elevating sensory and wellness experiences with value-added spice innovations, standardized botanical extracts, and pure natural ingredients.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
