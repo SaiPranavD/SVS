@@ -1499,6 +1499,39 @@ export const products: Product[] = [
     ]
   },
   {
+    "slug": "saffron",
+    "name": "Saffron",
+    "botanical": "Crocus sativus",
+    "category": "herbal-extracts",
+    "tagline": "Premium Saffron extract supporting mood, sleep, and ocular wellness",
+    "image": "/products/saffron-ingredient.svg",
+    "standardization": "Safranal ≥ 0.3% / Crocin ≥ 3%",
+    "partUsed": "Stigma",
+    "origin": "India",
+    "benefits": [
+      "Supports emotional balance and positive mood",
+      "Promotes restful sleep quality",
+      "Supports macular and vision health"
+    ],
+    "applications": [
+      "Dietary Supplements",
+      "Nutraceuticals",
+      "Ocular Formulas"
+    ],
+    "composition": [],
+    "specs": [
+      {
+        "label": "Appearance",
+        "value": "Reddish-brown powder"
+      }
+    ],
+    "packaging": "25 kg fiber drum",
+    "shelfLife": "36 months",
+    "certifications": [
+      "ISO 22000"
+    ]
+  },
+  {
     "slug": "curry-leaf-extract",
     "name": "Curry Leaf Extract",
     "botanical": "Murraya koenigii",
