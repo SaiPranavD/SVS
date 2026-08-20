@@ -375,17 +375,6 @@ function ProductsPage() {
                 </div>
               )}
             </div>
-
-            {/* Footer */}
-            <div className="p-4 border-t border-border bg-bone/50 flex justify-end gap-2">
-              <Link
-                to="/contact"
-                className="rounded-full bg-forest px-5 py-2 text-sm text-primary-foreground hover:bg-forest-deep transition"
-                onClick={() => setSelectedProduct(null)}
-              >
-                Request Spec Sheet &amp; Quote
-              </Link>
-            </div>
           </div>
         </div>
       )}
